@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap');
+
+.hidden {
+  display: none;
+}
+
+h3 {
+  color: #000;
+
+  font-family: Inter;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.2;
+}
+/* Headder */
+body {
+  font-family: 'Inter', sans-serif;
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.header {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #cadbeb 0%, rgba(235, 235, 235, 0) 100%);
+}
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+}
+.logo {
+}
+.menu {
+}
+.menu__list {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+}
+.menu__item {
+}
+.menu__link {
+  font-weight: 700;
+  line-height: normal;
+}
+.menu_button {
+  cursor: pointer;
+  border-radius: 30px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  padding: 15px 58px;
+  text-transform: uppercase;
+}
+.header__content {
+}
+
+.title {
+  padding-top: 100px;
+  position: absolute;
+  font-size: 210px;
+  font-weight: 700;
+}
+
+.title--air {
+  position: relative;
+  z-index: 3;
+}
+.title--pod {
+  position: relative;
+  z-index: 1;
+}
+.title--s {
+  position: absolute;
+  transform: translate(-20px, 60px);
+  z-index: 3;
+}
+.title--m {
+  position: absolute;
+  transform: translate(35px, 292px);
+  z-index: 3;
+}
+.title--ax {
+  position: absolute;
+  transform: translate(145px, 428px);
+  z-index: 1;
+}
+
+.header__content-img {
+  position: relative;
+  text-align: center;
+  padding-bottom: 50px;
+  z-index: 2;
+}
+
+/* TAB  ColorS selection */
+.select {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.select__paragraf {
+  max-width: 557px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.selecr__wrapper {
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.select__tab {
+  cursor: pointer;
+  padding: 45px;
+  border-radius: 20px;
+  border: 1px solid #e5e5e5;
+  transition: all 0.2s ease-in;
+}
+
+.select__tab:hover {
+  box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.25);
+}
