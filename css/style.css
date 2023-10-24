@@ -48,9 +48,13 @@ body {
 .menu__link {
   font-weight: 700;
   line-height: normal;
+  transition: all 0.2s ease-in;
 }
+.menu__link:hover {
+  opacity: 50%;
+}
+
 .menu_button {
-  cursor: pointer;
   border-radius: 30px;
   color: white;
   display: flex;
@@ -59,6 +63,10 @@ body {
   background: black;
   padding: 15px 58px;
   text-transform: uppercase;
+  transition: all 0.2s ease-in;
+}
+.menu_button:hover {
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.25);
 }
 
 .title {
@@ -97,6 +105,7 @@ body {
 }
 
 .header__content-img {
+  width: 100%;
   position: relative;
   text-align: center;
   padding-bottom: 50px;
@@ -131,6 +140,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 40px;
+  flex-wrap: wrap;
 }
 
 .select-color__btn {
@@ -213,4 +223,224 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: 1.2;
+}
+
+/* AUDIO Section */
+.audio {
+  background: url(../img/audio/bg_audio.svg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  position: relative;
+}
+
+.audio__inner {
+  min-height: 240vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 60vh;
+}
+
+.audio__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.audio__text {
+  color: white;
+  max-width: 295px;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.audio__btn {
+  border-radius: 30px;
+  color: black;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 58px;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in;
+}
+.audio__btn:hover {
+  box-shadow: 0px 5px 20px 0px rgba(255, 255, 255, 0.25);
+}
+
+/* FOOTER */
+.footer {
+  color: white;
+  padding: 50px 0 40px;
+  background: black;
+  text-align: center;
+  font-weight: 700;
+}
+
+.footer__feedback {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+}
+
+.footer__nav {
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer__link,
+.footer__logo {
+  transition: all 0.2s ease-in;
+}
+.footer__link:hover,
+.footer__logo:hover {
+  opacity: 50%;
+}
+
+/* MEDIa  1220*/
+@media (max-width: 1220px) {
+  .title {
+    font-size: 192px;
+  }
+  .title--m {
+    bottom: -195px;
+    right: 166px;
+  }
+  .title--ax {
+    bottom: -58px;
+    right: 0;
+  }
+}
+
+/* MEDIa 840*/
+@media (max-width: 840px) {
+  .title {
+    font-size: 150px;
+  }
+  .title--m {
+    bottom: -195px;
+    right: 247px;
+  }
+  .title--ax {
+    bottom: -58px;
+    right: 136px;
+  }
+}
+
+/* MEDIA 768*/
+@media (max-width: 768px) {
+  .select-color {
+    padding: 40px 0 0 0;
+  }
+  .select-color__tabs {
+    padding: 40px 0 60px 0;
+    gap: 16px;
+  }
+
+  .main__title {
+    font-size: 36px;
+  }
+
+  .composition__wrapper {
+    padding: 40px 0 60px 0;
+  }
+
+  .case {
+    padding: 0 0 20px 0;
+  }
+
+  .energy {
+    padding: 40px 0 60px 0;
+  }
+
+  .energy__hours {
+    font-size: 130px;
+    padding: 25px 0;
+  }
+
+  .title {
+    font-size: 132px;
+  }
+  .title--m {
+    bottom: -120px;
+    right: 222px;
+  }
+  .title--ax {
+    bottom: 15px;
+    right: 136px;
+  }
+}
+
+/* MEDIA 560*/
+@media (max-width: 560px) {
+  .composition__wrapper {
+    justify-content: center;
+    padding: 25px 0 60px 0;
+    row-gap: 25px;
+  }
+  .composition__list {
+    max-width: 100%;
+    text-align: center;
+    row-gap: 25px;
+  }
+
+  .header__content-img {
+    margin-top: 100px;
+  }
+
+  .menu__list {
+    column-gap: 10px;
+  }
+
+  .menu_button {
+    padding: 10px 40px;
+  }
+
+  .title {
+    font-size: 107px;
+  }
+  .title--m {
+    bottom: 8px;
+    right: 198px;
+  }
+  .title--ax {
+    bottom: 141px;
+    right: 136px;
+  }
+}
+
+/* MEDIA 470*/
+@media (max-width: 470px) {
+  .title {
+    font-size: 87px;
+  }
+  .title--m {
+    bottom: 74px;
+    right: 150px;
+  }
+  .title--ax {
+    bottom: 209px;
+    right: 136px;
+  }
+}
+
+/* MEDIA 415*/
+@media (max-width: 415px) {
+  .audio__inner {
+    min-height: 160vh;
+    padding-bottom: 25vh;
+  }
 }
