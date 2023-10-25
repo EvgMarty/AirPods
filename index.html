@@ -11,7 +11,7 @@
 
   <body>
     <!-- Header -->
-    <header class="header">
+    <header id="color-blue" data-header class="header">
       <div class="container">
         <div class="header__top">
           <a href="#" class="logo">
@@ -43,11 +43,36 @@
             <span class="title--ax">AX</span>
           </h1>
           <div class="header__content-img">
-            <img class="hidden" src="./img/header/airpods_black.svg" alt="" />
-            <img src="./img/header/airpods_blue.svg" alt="" />
-            <img class="hidden" src="./img/header/airpods_green.svg" alt="" />
-            <img class="hidden" src="./img/header/airpods_red.svg" alt="" />
-            <img class="hidden" src="./img/header/airpods_white.svg" alt="" />
+            <img
+              class="color-black hidden"
+              src="./img/header/airpods_black.svg"
+              alt=""
+              data-content
+            />
+            <img
+              class="color-blue"
+              src="./img/header/airpods_blue.svg"
+              alt=""
+              data-content
+            />
+            <img
+              class="color-green hidden"
+              src="./img/header/airpods_green.svg"
+              alt=""
+              data-content
+            />
+            <img
+              class="color-red hidden"
+              src="./img/header/airpods_red.svg"
+              alt=""
+              data-content
+            />
+            <img
+              class="color-white hidden"
+              src="./img/header/airpods_white.svg"
+              alt=""
+              data-content
+            />
           </div>
         </div>
       </div>
@@ -64,19 +89,19 @@
             AirPods. The ultimate personal audio experience.
           </p>
           <div class="select-color__tabs">
-            <button class="select-color__btn hidden">
+            <button class="select-color__btn active-tab" data-tab="color-blue">
               <img src="./img/tab/tab_blue.svg" alt="" />
             </button>
-            <button class="select-color__btn">
+            <button class="select-color__btn" data-tab="color-green">
               <img src="./img/tab/tab_green.svg" alt="" />
             </button>
-            <button class="select-color__btn">
+            <button class="select-color__btn" data-tab="color-white">
               <img src="./img/tab/tab_white.svg" alt="" />
             </button>
-            <button class="select-color__btn">
+            <button class="select-color__btn" data-tab="color-red">
               <img src="./img/tab/tab_red.svg" alt="" />
             </button>
-            <button class="select-color__btn">
+            <button class="select-color__btn" data-tab="color-black">
               <img src="./img/tab/tab_black.svg" alt="" />
             </button>
           </div>
@@ -111,29 +136,34 @@
             </ul>
             <div class="composition__img">
               <img
-                class="hidden"
+                class="color-black hidden"
                 src="./img/composition/composition_black.svg"
                 alt=""
+                data-content
               />
               <img
-                class=""
+                class="color-blue"
                 src="./img/composition/composition_blue.svg"
                 alt=""
+                data-content
               />
               <img
-                class="hidden"
+                class="color-green hidden"
                 src="./img/composition/composition_green.svg"
                 alt=""
+                data-content
               />
               <img
-                class="hidden"
+                class="color-red hidden"
                 src="./img/composition/composition_red.svg"
                 alt=""
+                data-content
               />
               <img
-                class="hidden"
+                class="color-white hidden"
                 src="./img/composition/composition_white.svg"
                 alt=""
+                data-content
               />
             </div>
           </div>
@@ -148,11 +178,36 @@
             When stored in the sleek and lightweight Smart Case , AirPods Max
             enter a low-power state to save energy.
           </p>
-          <img class="hidden" src="./img/case/airpods-max_black.svg" alt="" />
-          <img src="./img/case/airpods-max_blue.svg" alt="" />
-          <img class="hidden" src="./img/case/airpods-max_green.svg" alt="" />
-          <img class="hidden" src="./img/case/airpods-max_red.svg" alt="" />
-          <img class="hidden" src="./img/case/airpods-max_white.svg" alt="" />
+          <img
+            class="color-black hidden"
+            src="./img/case/airpods-max_black.svg"
+            alt=""
+            data-content
+          />
+          <img
+            class="color-blue"
+            src="./img/case/airpods-max_blue.svg"
+            alt=""
+            data-content
+          />
+          <img
+            class="color-green hidden"
+            src="./img/case/airpods-max_green.svg"
+            alt=""
+            data-content
+          />
+          <img
+            class="color-red hidden"
+            src="./img/case/airpods-max_red.svg"
+            alt=""
+            data-content
+          />
+          <img
+            class="color-white hidden"
+            src="./img/case/airpods-max_white.svg"
+            alt=""
+            data-content
+          />
         </div>
       </section>
 
